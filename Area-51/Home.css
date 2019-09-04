@@ -45,14 +45,26 @@ li a:hover {
 
 /* title */
 #title {
-  text-align: center;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Begining video */
 .video-wrapp {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   
+}
+
+/* message */
+.message {
+  font-size: 400;
+}
+
+/* footer*/
+.notes {
+  text-align: center;
+  padding-top: 25px;
 }
 
 
