@@ -1,0 +1,61 @@
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+
+/* Top image */
+#logo {
+  width: 100%;
+  height: 400px;
+
+}
+
+#img2{
+    width: 17%;
+    height: 200px;
+
+}
+/* Background image*/
+
+.background {
+  background-image: url(./Assets/alien.jpeg);
+}
+
+/* title */
+#title {
+  text-align: center;
+}
+
+/* Begining video */
+.video-wrapp {
+  display: flex;
+  justify-content: center;
+
+}
