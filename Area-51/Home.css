@@ -1,19 +1,18 @@
 /* Navigation layout */
 #navbar {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
 
-li {
-  float: left;
+#navbar li {
+float: left;
   border-right: 1px solid #bbb;
 
 }
 
-li a {
+#navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -61,6 +60,3 @@ li a:hover {
   text-align: center;
   padding-top: 25px;
 }
-
-
-
