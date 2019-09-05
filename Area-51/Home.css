@@ -1,19 +1,19 @@
 /* Navigation layout */
 #navbar {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  list-style-type: none;
 }
 
-li {
-  float: left;
+#navbar li {
+float: left;
   border-right: 1px solid #bbb;
 
 }
 
-li a {
+#navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -24,11 +24,6 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
-}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
 }
 
 /* Top image */
@@ -45,15 +40,30 @@ li a:hover {
 
 /* title */
 #title {
-  text-align: center;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Begining video */
 .video-wrapp {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   
 }
 
+/* message */
+.message {
+  font-size: 20px;
+}
 
+/* footer*/
+.notes {
+  text-align: center;
+  padding-top: 25px;
+}
 
+/* table */
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
