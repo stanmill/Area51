@@ -53,7 +53,7 @@ li a:hover {
 .video-wrapp {
   display: flex;
   justify-content: left;
-  border-left: 4px solid rgb(124, 124, 192); 
+  border-left: 4px solid #2F4F4F; 
 }
 
 /* message */
