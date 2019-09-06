@@ -61,6 +61,10 @@ li a:hover {
   font-size: 20px;
 }
 
+.message p.text {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
 /* footer*/
 .notes {
   text-align: center;
