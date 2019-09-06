@@ -28,10 +28,18 @@ li a:hover {
 
 /* formatting text <p> */
 #format {
+            /*
+            Text shadow/box
 
+            */
             text-shadow: 5px 5px 2px #ffff;
             color : blue;
-            /*adding marging for top element*/
+
+            /*
+
+            Justify Question
+
+            */
             margin-top: 100px;
 
             margin-left: 25%;
@@ -144,9 +152,14 @@ text-align: center;
 
 
 /*link at the end of page*/
-#link1:hover {
-     color: green;
-     color:#FF66FF;
 
+
+#link1:hover {
+
+     color:#FF66FF;
+}
+
+#link1:active{
+    color:crimson;
 }
 
