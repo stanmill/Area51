@@ -21,6 +21,11 @@ float: left;
   text-decoration: none;
 }
 
+/* colors the navbar of the current page*/
+#navbar a.active {
+  background-color: #2F4F4F;
+}
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
@@ -46,9 +51,9 @@ li a:hover {
 
 /* Begining video */
 .video-wrapp {
-  display: flex;
   justify-content: left;
-  
+  border-left: 4px solid #2F4F4F; 
+  display: block;
 }
 
 /* message */
@@ -66,4 +71,18 @@ li a:hover {
 table, th, td {
   border: 1px solid black;
   text-align: center;
+  border-collapse: collapse;    
+}
+
+th {
+    
+  font-size: 40px; 
+  font-family: "Comic Sans", cursive, sans-serif;
+  background-color: #2F4F4F;
+  color: lightgoldenrodyellow;    
+}
+
+tr:nth-child(even){
+    
+    background-color: #f2f2f2;
 }
