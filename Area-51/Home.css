@@ -66,4 +66,28 @@ li a:hover {
 table, th, td {
   border: 1px solid black;
   text-align: center;
+  border-collapse: collapse;
+    
 }
+
+
+th {
+    
+  font-size: 40px; 
+  font-family: "Comic Sans", cursive, sans-serif;
+  background-color: #2F4F4F;
+  color: lightgoldenrodyellow;
+    
+}
+
+tr:nth-child(even){
+    
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
