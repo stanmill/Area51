@@ -1,0 +1,126 @@
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+#format {
+
+            margin-left: 25%;
+            margin-right: 25%;
+            padding: 14px 16px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 900px){
+            #textArea{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+#format1 {
+
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 14px 16px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 900px){
+            #textArea{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+/* Top image */
+#logo {
+  width: 100%;
+  height: 400px;
+
+
+}
+#braintxt{
+text-align: center;
+
+}
+#img2{
+    width: 20%;
+    height: 200px;
+     margin-left: 35%;
+                margin-right: 10%;
+                padding: 14px 16px;
+                text-align: center;
+
+
+}
+
+#img1{
+
+     margin-left: 25%;
+                margin-right: 10%;
+                padding: 14px 16px;
+                text-align: center;
+
+
+}
+
+#img3{
+                margin-left: 35%;
+                margin-right: 10%;
+                padding: 14px 16px;
+                text-align: center;
+
+}
+
+#img4{
+                margin-left: 37%;
+                margin-right: 10%;
+                padding: 14px 16px;
+                text-align: center;
+
+
+}
+/* Background image*/
+
+.background {
+  background-image: url(./Assets/Grey-Background.jpg);
+}
+
+/* title */
+#title {
+  text-align: center;
+}
+
+/* Begining video */
+.video-wrapp {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+

@@ -4,6 +4,7 @@
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  list-style-type: none;
 }
 
 #navbar li {
@@ -52,11 +53,17 @@ li a:hover {
 
 /* message */
 .message {
-  font-size: 400;
+  font-size: 20px;
 }
 
 /* footer*/
 .notes {
   text-align: center;
   padding-top: 25px;
+}
+
+/* table */
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
 }
