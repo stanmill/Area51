@@ -21,6 +21,11 @@ float: left;
   text-decoration: none;
 }
 
+/* colors the navbar of the current page*/
+#navbar a.active {
+  background-color: #2F4F4F;
+}
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
