@@ -51,9 +51,9 @@ li a:hover {
 
 /* Begining video */
 .video-wrapp {
+  display: flex;
   justify-content: left;
   border-left: 4px solid #2F4F4F; 
-  display: block;
 }
 
 /* message */
