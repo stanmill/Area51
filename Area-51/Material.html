@@ -8,6 +8,48 @@
         <title>Materials</title>
     </head>
     <body>
+    
+    <script>
+        
+        password = window.prompt("Classified Info", "Enter Secret password");
+        
+        if (password != "Wah!"){
+            alert(" Nice Try FBI!\n You won't get us today NSA!\n We're the best IRS!\n It's not meant to be DOD!\n")
+            window.stop();}
+        
+        else{
+            window.confirm("Top Secret, Do not show the Area 51 guards.");}
+        
+        function TodaysDate(){
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1;
+            var yyyy = today.getFullYear();
+
+            if(dd<10) {
+                dd = '0' + dd
+            } 
+
+            if(mm<10) {
+            mm = '0' + mm
+            } 
+
+            date = mm + '/' + dd + '/' + yyyy;
+                return date
+            }
+        
+        
+        
+            
+     showCookies = () =>{
+         
+         document.cookie = "UserName = Naruto Runner, DateVisited =" + TodaysDate();
+         
+         alert(document.cookie);}
+        
+       
+    </script>
+       
         <img id="logo" src="./Assets/alien.png" alt="alien image">
         <ul id="navbar">
             <li><a href="Home.html">Home</a></li>
@@ -15,6 +57,9 @@
             <li><a href="Material.html" class="active">Material</a></li>
             <li><a href="Debriefing.html">Debriefing</a></li>
         </ul>
+        
+        <button type="button" onclick="showCookies()">Show all cookies</button>
+        
         <h1>Materials</h1>
         <h2>Invading won't be easy, we're gonna need equipment</h2>
         
@@ -129,7 +174,5 @@
                 <td>$20</td>
             </tr>
         </table>
-        </
-        
     </body>
 </html>
