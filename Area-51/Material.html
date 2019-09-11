@@ -20,10 +20,12 @@
         
         if (password != "Wah"){
             alert(" Nice Try FBI!\n You won't get us today NSA!\n We're the best IRS!\n Why don't you flee, CDC\n It's not meant to be DOD!\n Nice attempt at obscurity, Department of Homeland Security!\n  ")
-            window.stop();}
-        
+            window.stop();
+        }
+
         else{
-            window.confirm("Access Granted.\n\nTop Secret, Do not show the Area 51 guards.");}
+            window.confirm("Access Granted.\n\nTop Secret, Do not show the Area 51 guards.");
+        }
         
         function TodaysDate(){
             var today = new Date();
@@ -50,25 +52,44 @@
          
          document.cookie = "UserName = Naruto Runner, DateVisited =" + TodaysDate();
          
-         alert(document.cookie);}
+         alert(document.cookie);
+     }
         
        
     </script>
 
-        <img id="logo" src="./Assets/alien.png" class="img-fluid" alt="alien image">
-        <ul id="navbar">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="History.html">History</a></li>
-            <li><a href="Material.html" class="active">Material</a></li>
-            <li><a href="Debriefing.html">Debriefing</a></li>
-        </ul>
+    <img src="./Assets/alien.png" class="img-responsive logo" alt="alien image">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+                <a class="navbar-brand" href="#">Area-51</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="History.html">History</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Material.html">Material</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Debriefing.html">Debriefing</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         
         
-        <h1>Materials</h1>
-        <h2>Invading won't be easy, we're gonna need equipment</h2>
+        <h1 style = "text-align: center">Materials</h1>
+        <h2 style = "text-align: center">Invading won't be easy, we're gonna need equipment</h2>
         
         
-        <p>
+        <p style = "text-align: center">
             To support the kyles, karens, naruto runners and rock-throwers, we're gonna have to arm them
             with the best tools money can buy. Here's a list of some items we'll need
         </p>
@@ -76,28 +97,30 @@
         <!--
             WHAT IS BRACKETS?
         -->
-        <ul>
-            <li>Monster Energy Drinks</li>
-            <li>Rocks</li>
-            <li>Kunai</li>
-            <li>Katana</li>
-            <li>Enderpearls</li>
-            <li>Minecraft Beds</li>
-            <li>TNT Cannons</li>
-            <li>Super Soakers</li>
-            <li>Nerf Guns</li>
+        <div class="row justify-content-md-center">
+        <ul style = "text-align: center"  class = "list-group">
+            <li class = "list-group-item list-group-item-primary">Monster Energy Drinks</li>
+            <li class = "list-group-item list-group-item-secondary">Rocks</li>
+            <li class = "list-group-item list-group-item-primary">Kunai</li>
+            <li class = "list-group-item list-group-item-secondary">Katana</li>
+            <li class = "list-group-item list-group-item-primary">Enderpearls</li>
+            <li class = "list-group-item list-group-item-secondary">Minecraft Beds</li>
+            <li class = "list-group-item list-group-item-primary">TNT Cannons</li>
+            <li class = "list-group-item list-group-item-secondary">Super Soakers</li>
+            <li class = "list-group-item list-group-item-primary">Nerf Guns</li>
 
-            <li>Italian Grand Piano</li>
+            <li class = "list-group-item list-group-item-secondary"> An Italian Grand Piano</li>
         
         
         </ul>
+        </div>
         
         
         <!--
             GET STARTED WITH YOUR OWN FILES
         -->
         
-        <h3>Cost Table</h3>
+        <h3 style = "text-align: center"><br><br>Cost Table</h3>
         <div style="overflow-x:auto;">
         <table style="width:100%">
             <tr>
@@ -111,70 +134,70 @@
             <tr>
                 <td>50,000</td>
                 <td>Monster Energy Drinks</td>
-                <td><img src="./Assets/monster.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/monster.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$150,000</td>
             </tr>
     
             <tr>
                 <td>50,000</td>
                 <td>Rocks</td>
-                <td><img src="./Assets/Stone.png" class="img-fluid"></img></td> 
+                <td><img src="./Assets/Stone.png" class="img-fluid" class="rounded"></img></td> 
                 <td>Free(just go find one)</td>
             </tr>
 
             <tr>
                 <td>11,000</td>
                 <td>Kunai</td>
-                <td><img src="./Assets/kunai.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/kunai.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$80,000</td>
             </tr>
             <tr>
                 <td>11,000</td>
                 <td>Katana</td>
-                <td><img src="./Assets/katana.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/katana.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$150,000</td>
             </tr>
             <tr>
                 <td>70,000</td>
                 <td>Enderpearls</td>
-                <td><img src="./Assets/enderpearl.png" class=img-fluid""></img></td> 
+                <td><img src="./Assets/enderpearl.png" class=img-fluid"" class="rounded"></img></td> 
                 <td>Kill 70,000 Endermen</td>
             </tr>
             <tr>
                 <td>50,000</td>
                 <td>Minecraft Bed</td>
-                <td><img src="./Assets/bed.png" class="img-fluid"></img></td> 
+                <td><img src="./Assets/bed.png" class="img-fluid" class="rounded"></img></td> 
                 <td>$1,500,000</td>
             </tr>
             <tr>
                 <td>5,000</td>
                 <td>Minecraft TNT Cannons</td>
-                <td><img src="./Assets/TNT.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/TNT.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$1,150,000</td>
             </tr>
             <tr>
                 <td>4,000</td>
                 <td>Super Soakers</td>
-                <td><img src="./Assets/Soaker.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/Soaker.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$400,000</td>
             </tr>
             <tr>
                 <td>3,000</td>
                 <td>Nerf Guns</td>
-                <td><img src="./Assets/Nerf.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/Nerf.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$500,000</td>
             </tr>
             
             <tr>
                 <td>1</td>
                 <td>Italian Grand Piano</td>
-                <td><img src="./Assets/Piano.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/Piano.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$250,000</td>
 
             <tr>
                 <td>1</td>
                 <td>Box of Scooby Snacks</td>
-                <td><img src="./Assets/Scooby.jpg" class="img-fluid"></img></td> 
+                <td><img src="./Assets/Scooby.jpg" class="img-fluid" class="rounded"></img></td> 
                 <td>$20</td>
 
             
