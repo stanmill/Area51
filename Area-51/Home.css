@@ -19,8 +19,7 @@
 .title {
   display: flex;
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 2%;
-  margin-left: 2%;
+  margin: 2%;
 }
 
 /* countdown */
@@ -30,7 +29,7 @@
   font-weight: 100; 
   float: right;
   background-color: #2F4F4F;
-  margin-right: 1%;
+  margin: 2%;
   border: solid;
 }
 
@@ -70,13 +69,13 @@
 .video-wrapp {
   display: inline;
   justify-content: left;
-  margin-left: 2%;
+  margin: 2%;
 }
 
 /* message */
 .message {
   font-size: 20px;
-  margin-left: 2%;
+  margin: 2%;
 }
 
 .message p.text {
