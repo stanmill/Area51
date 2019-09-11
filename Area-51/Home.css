@@ -11,7 +11,8 @@
 
 /* Background image*/
 .background {
-  background-image: url(./Assets/alien.jpeg);
+  /*background-image: url(./Assets/alien.jpeg);*/
+  background-color: rgb(194, 192, 192);
 }
 
 /* title */
@@ -19,6 +20,7 @@
   display: flex;
   font-family: 'Courier New', Courier, monospace;
   margin-top: 2%;
+  margin-left: 2%;
 }
 
 /* countdown */
@@ -28,7 +30,8 @@
   font-weight: 100; 
   float: right;
   background-color: #2F4F4F;
-  margin-right: 20px;
+  margin-right: 1%;
+  border: solid;
 }
 
 .countdown{ 
@@ -67,13 +70,13 @@ smalltext{
 .video-wrapp {
   display: inline;
   justify-content: left;
-  border-left: 4px solid #2F4F4F; 
-  flex-direction: row;
+  margin-left: 2%;
 }
 
 /* message */
 .message {
   font-size: 20px;
+  margin-left: 2%;
 }
 
 .message p.text {
@@ -83,7 +86,9 @@ smalltext{
 /* footer*/
 .notes {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 2%;
+  background-color: #2F4F4F;
+  margin-top: 2%;
 }
 
 /* table */
@@ -110,4 +115,8 @@ tr:nth-child(even){
     margin: 0;
     background-color: transparent;
     text-align: center;
+}
+
+address {
+  color: aliceblue;
 }
