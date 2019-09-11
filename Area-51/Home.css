@@ -10,15 +10,15 @@
 }
 
 /* Background image*/
-
 .background {
   background-image: url(./Assets/alien.jpeg);
 }
 
 /* title */
-#title {
-  text-align: left;
+.title {
+  display: flex;
   font-family: 'Courier New', Courier, monospace;
+  margin-top: 2%;
 }
 
 /* countdown */
@@ -65,7 +65,7 @@ smalltext{
 
 /* Begining video */
 .video-wrapp {
-  display: flex;
+  display: inline;
   justify-content: left;
   border-left: 4px solid #2F4F4F; 
   flex-direction: row;
