@@ -56,6 +56,7 @@ li a:hover {
   font-weight: 100; 
   float: right;
   background-color: #2F4F4F;
+  margin-right: 20px;
 }
 
 .countdown{ 
@@ -95,6 +96,7 @@ smalltext{
   display: flex;
   justify-content: left;
   border-left: 4px solid #2F4F4F; 
+  flex-direction: row;
 }
 
 /* message */

@@ -24,4 +24,4 @@ let x = setInterval(function(){
         document.getElementById("minute").innerHTML ='00' ;  
         document.getElementById("second").innerHTML = '00';
     }
-},1000);
+},1000); 
