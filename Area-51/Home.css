@@ -61,7 +61,7 @@
     background: #00816A; 
     display: inline-block; 
 } 
-smalltext{ 
+.smalltext{ 
     padding-top: 5px; 
     font-size: 16px; 
 } 
@@ -89,6 +89,7 @@ smalltext{
   padding-top: 2%;
   background-color: #2F4F4F;
   margin-top: 2%;
+  border: solid;
 }
 
 /* table */
