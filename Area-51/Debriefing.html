@@ -3,7 +3,7 @@
 <style>
 
 
-    </style>
+</style>
 <head>
     <meta charset="UTF-8">
     <title>Debriefing</title>
@@ -25,14 +25,19 @@
     <li><a href="Debriefing.html" class="active">Debriefing</a></li>
 </ul>
 
+
+
 <div class="video-wrapp" >
-    <iframe src="https://www.youtube.com/embed/8ETxAgnFeJk" width="800" height="500" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/8ETxAgnFeJk" width="800" height="500"  frameborder="0" allowfullscreen></iframe>
 </div>
 
+<button type = "button" onclick="document.getElementById('datebuttondemo').innerHTML = Date()"> Display Current Time and Date.</button>
+<p id = "datebuttondemo"></p>
+
 <p id="format"> Alright guys! I hope you are all ready, because this is the moment we've been dreaming of all our lives.
-   Even when our forefathers fought for the higher cause of freedom, they never would have thought that a day like this would come. Where we would not only fight for
-    a nations freedom, for the freedom of all intergalactic lives. So now, lets get to how we're going to accomplish this. We will look at our top of 
-    the line strategy plans. I'm telling you we have the best strategists, that have played countless hours of age of empire. 
+    Even when our forefathers fought for the higher cause of freedom, they never would have thought that a day like this would come. Where we would not only fight for
+    a nations freedom, for the freedom of all intergalactic lives. So now, lets get to how we're going to accomplish this. We will look at our top of
+    the line strategy plans. I'm telling you we have the best strategists, that have played countless hours of age of empire.
 </p>
 
 
@@ -41,11 +46,22 @@
 
 
 <p id = "braintxt">
-<strong>Big Brain Strategy</strong>
+    <strong>Big Brain Strategy</strong>
+    <!-- js Changing HTML syte (css) -->
+    <button type="button" onclick = "document.getElementById('braintxt').style.fontSize='35px'">ant-man</button>
 </p>
+
+<!-- JAvaScript OutPut , windows . alert  -->
+<p id="bigbrainoperation"> What's answer for the quadratic equation u^2 -5u -14 = 0 ? </p>
+<button type="button" onclick="window.alert(u = 7  )">answer alert1</button>
+<button type="button" onclick="window.alert(u = -2  )">answer alert2</button>
+
+<!-- Changing HTML CONTENT -->
+<button type = "button" onclick='document.getElementById("bigbrainoperation").innerHTML = " the solution is u = -2 and u = 7"'> find the solution ! </button>
 
 
 <img id="img2" src="./Assets/2e8syk.jpg" alt="bigbrain">
+
 
 <p id="format1">
     First, the Karens will distract the Guards. They will be separated into two battalions. The first battalion will
@@ -54,26 +70,44 @@
     The second group will hide behind the Kyles. The Kyles will be equipped with Monster
     Energy drinks. They should accumulate enough energy in the Area 51 Alien Centre before leaving.
     Once at the perimeter, they will charge through the walls of the base, making an entrance for all the other troops.<br><br>
-   
+
     The Kyles may be powered up by their monster energy drinks, but the area 51 guards are formidable opponents.
-    </p>
-    
+</p>
+
+<!-- BYTES DEMO -->
+<p> bitwise operation , zero fill right shift.  right fill shift = pushing one or more zeroes bits from the left , and the right most bit falls down . </p>
+<p id ="bytesdemo">   </p>
+<script> document.getElementById("bytesdemo").innerHTML = 5 >>> 1; </script>
+
+<!-- JAVASCRIPT FUNCTION CHANGING TO CELSIUS -->
+<p> Converting from fahrenheit to Celsius: </p>
+<p id ="funcCelsius">  </p>
+<script> function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+document.getElementById("funcCelsius").innerHTML = toCelsius(51);
+</script>
+
+
+
 <img id="img3" src ="Assets/Guards.jpg">
-    
+<!-- JS Hiding html elements -->
+<button type="Sharingan!!" onclick = "document.getElementById('img3').style.display='none'">Sharingan!</button>
+
 <p id="format1">
-    
+
     We will need to send in the Rock Throwers to help distract the Guards with rocks to defend the Kyles.
     We should stock up with about 5000 rocks before we head to the Area. Meanwhile, the Karens will serve as the second line of distraction, and will try to seduce the Guards with sexy looks.<br><br>
-    
+
     After the Kyles open holes in the walls, the Naruto runners will engage the guards in melee after dodging and deflecting all their bullets
-        <br><br>
+    <br><br>
     We will then divert a few rock throwers to throw enderpearls behind enemy lines to wreak havoc with enemy defences. For the penultimate wave, we will send in two armies of gunmen and a battalion of minecraft engineers who will man the TNT cannons. The armies will be equipped with Super Soakers and Nerf guns for maximum damage. One of the armies will surround Shane Dawson as he documents all the events that will happen and stream it live. <br><br>
-    
-    
+
+
     The other army will use the box of scooby snacks to summon our most powerful ally. Ultra Instinct Shaggy. Shaggy will use almost 1% of his power to utterly push back the guards and let us deeper into the facility. Once inside, we will have full access to the secrets contained in the base, but we must still remain wary for potential Guards. <br><br>
-    
+
     Everyone will meet up at The Central Vault where we suspect the military has kept the top secret experiments and most importantly, aliens. <br><br> At this point the guard reinforcements should arrive. This is where it get's tricky, we're gonna need someone to perfectly play Giorno's theme on the piano we brought to give us the final push to escape.<br><br>
-    
+
     Before the Raid, we will all assemble in the Area 51 Alien Centre on september 19th.
     There, we will get equipped, rest up to tip-top condition.
     The plan will be announced one more time before we leave to Area 51 at around September 19, 11 pm.
@@ -83,12 +117,47 @@
     send the wounded to the nearest hospital to relax. There, we will have the final debrief and congratulations, and leave by 3 pm.
     <br><br>
     That's our plan, good luck and remember, <b>they can't stop all of us.</b><br>
-</p>
-    <img id="img4" src ="Assets/download.jpg">
 
-    <p> </p>
-    
-<a id="link1" href="https://www.youtube.com/watch?v=hAAlDoAtV7Y" ; > <strong> Soundtrack Link</strong> </a>
+<p> "Happiness can be found even in the darkest of times if one only remembers to turn on the light."(ALBUS DUMBLEDORE, 1999)</p>
+
+<!-- Changing attributes values  -->
+<!-- In this case js is changing the attribute src(source) value of an image  -->
+<button onclick="document.getElementById('bulbboi').src='./Assets/bulbboi_on.png'"style ="position:relative; left:15px; bottom:340px;"> Remember To turn the light </button>
+
+<img id="bulbboi" src="./Assets/bulbboi_off.png" width='500' height='300' style="margin-top:50px;position:relative;right:100px">
+
+<button onclick="document.getElementById('bulbboi').src='./Assets/bulbboi_off.png'"style ="position:relative; left:0px; bottom:340px;">Turn off the light</button>
+
+<img id="img4" src ="Assets/download.jpg">
+
+
+<!-- CREATING AND DISPLAYING OBJECT -->
+<p id="obj1"></p>
+<script>
+// Create an object:
+var floridaAlien = {
+  firstName: "boi",
+  lastName: "smoll",
+  age: 69,
+  thiccnes: "EXTRA_THICC"
+};
+document.getElementById("obj1").innerHTML = floridaAlien.lastName+
+floridaAlien.firstName + " is " + floridaAlien.age + " years old."+" and he is: "
++ floridaAlien.thiccnes;
+</script>
+
+<img src = "Assets/thiccboi.png">
+
+<!-- Using Script inside HTML -->
+<p id = "firstScript"></p>
+<script>document.getElementById("firstScript").innerHTML = " Using script js inside html doc";</script>
+
+<!-- EXTERNAL JAVASCRIPT  FUNCITON-->
+<p id = "fuc1" > </P>
+<button type = "func1" onclick="firstFunc()" style ="position:relative; bottom : 30px;">External javaScript</button>
+<script src ="Debriefing.js"></script>
+
+<a id="link1" href="https://www.youtube.com/watch?v=hAAlDoAtV7Y" ; ><strong> Soundtrack Link</strong></a>
 
 </body>
 </html>
