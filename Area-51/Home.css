@@ -13,6 +13,7 @@
 .background {
   /*background-image: url(./Assets/alien.jpeg);*/
   background-color: rgb(194, 192, 192);
+  font-family: Consolas, monospace;
 }
 
 /* title */
@@ -20,6 +21,39 @@
   display: flex;
   font-family: 'Courier New', Courier, monospace;
   margin: 2%;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width:16.3em }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width:16.3em }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+.title { 
+  font-size:150%;
+  width:16.3em;
+  white-space:nowrap;
+  overflow:hidden;
+  border-right: .1em solid black;
+  
+  animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                      blink-caret 1s step-end infinite;
+  -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                      blink-caret 1s step-end infinite;
 }
 
 /* countdown */
@@ -82,6 +116,7 @@
   text-transform: uppercase;
   text-decoration: underline;
 }
+
 /* footer*/
 .notes {
   text-align: center;
