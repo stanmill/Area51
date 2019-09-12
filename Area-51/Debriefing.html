@@ -7,8 +7,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Debriefing</title>
 
     <!-- external css -->
@@ -60,7 +61,20 @@
     the line strategy plans. I'm telling you we have the best strategists, that have played countless hours of age of empire.
 </p>
 
+<br>
+<br>
+<div class="container">
+    <h3>We hold these truths to be self evident that all beings in our galaxy are equal</h3>
+    <a href="#" data-toggle="tooltip" title="I have a dream!">Hover over me</a>
+</div>
+<br>
+<br>
 
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 <img id="img1" src="./Assets/image.png" alt="map" >
 
@@ -83,7 +97,7 @@
 <img id="img2" src="./Assets/2e8syk.jpg" alt="bigbrain">
 
 
-<p id="format1">
+<p id="format10">
     First, the Karens will distract the Guards. They will be separated into two battalions. The first battalion will
     jam the communication line
     between the Area 51 Guards and the US armed and air forces.
@@ -176,6 +190,16 @@ floridaAlien.firstName + " is " + floridaAlien.age + " years old."+" and he is: 
 <p id = "fuc1" > </P>
 <button type = "func1" onclick="firstFunc()" style ="position:relative; bottom : 30px;">External javaScript</button>
 <script src ="Debriefing.js"></script>
+
+
+<!-- bootsrtap using badges -->
+<div class="container">
+    <h2>Badges of honor </h2>
+    <a href="#">Pirate King<span class="ALPHA badge">bruh</span></a><br>
+    <a href="#">Hokage <span class=" stealth badge ">I'm walking here </span></a><br>
+    <a href="#">Useless <span class="off badge">noob</span></a>
+</div>
+
 
 <a id="link1" href="https://www.youtube.com/watch?v=hAAlDoAtV7Y" ; ><strong> Soundtrack Link</strong></a>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
