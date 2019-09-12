@@ -169,6 +169,10 @@ text-align: center;
   margin-top: 20px;
 }
 
+.navbar {
+  background-color: #2F4F4F;
+}
+
 /*link at the end of page*/
 
 #link1{
