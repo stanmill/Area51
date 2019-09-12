@@ -122,7 +122,6 @@ text-align: center;
 
 .background {
   background-image: url(./Assets/Grey-Background.jpg);
-  font-family: Consolas, monospace;
 }
 
 /* title */
@@ -139,6 +138,7 @@ text-align: center;
 
 .navbar {
   background-color: #2F4F4F;
+  font-family: Consolas, monospace;
 }
 
 /*link at the end of page*/
