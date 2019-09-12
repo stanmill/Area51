@@ -35,9 +35,7 @@ button {
 }
 
 
-#navbar a.active {
-  background-color: #2F4F4F;
-}
+
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
