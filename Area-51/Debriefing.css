@@ -122,6 +122,7 @@ text-align: center;
 
 .background {
   background-image: url(./Assets/Grey-Background.jpg);
+  font-family: Consolas, monospace;
 }
 
 /* title */
