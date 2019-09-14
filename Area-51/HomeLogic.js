@@ -1,6 +1,6 @@
 
 let deadline = new Date("Sep 20, 2019 03:00").getTime();
-
+// time countdown
 let x = setInterval(function(){
     let now = new Date().getTime();
     let distance = deadline - now;
@@ -26,6 +26,7 @@ let x = setInterval(function(){
     }
 },1000);
 
+// pie chart API
 window.onload = function() {
 
     var chart = new CanvasJS.Chart("chartContainer", {
