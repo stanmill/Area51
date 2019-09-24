@@ -16,15 +16,23 @@
     
     <script>
         
-        password = window.prompt("Halt right there criminal scum! This is confidential information.", "Enter Secret password");
+        var password = window.prompt("Halt right there criminal scum! This is confidential information.", "Enter Secret password");
         
         if (password != "Wah"){
-            alert(" Nice Try FBI!\n You won't get us today NSA!\n We're the best IRS!\n Why don't you flee, CDC\n It's not meant to be DOD!\n Nice attempt at obscurity, Department of Homeland Security!\n  ")
+            alert(" Nice Try FBI!\n You won't get us today NSA!\n Why don't you just flee, CDC!\n We're the best IRS!\n It's not meant to be DOD!\n Nice attempt at obscurity, Department of Homeland Security!\n  ")
             window.stop();
         }
 
         else{
-            window.confirm("Access Granted.\n\nTop Secret, Do not show the Area 51 guards.");
+            var confirm = window.confirm("Access Granted.\n\nTop Secret, Do not show the Area 51 guards.");
+            
+            if (confirm != true) {
+                
+                alert(" You won't tell anyone traitor!")
+                
+                window.stop();
+                }
+            
         }
         
         function TodaysDate(){
@@ -54,7 +62,6 @@
          
          alert(document.cookie);
      }
-        
        
     </script>
 
@@ -94,9 +101,7 @@
             with the best tools money can buy. <br><br> Here's a list of some items we'll need:
         </p>
         
-        <!--
-            WHAT IS BRACKETS?
-        -->
+
         <div class="row justify-content-md-center">
             <div class = "col-md-5">
         <ul style = "text-align: center; font-size: 14pt"  class = "list-group">
@@ -117,10 +122,6 @@
     </div>
         </div>
         
-        
-        <!--
-            GET STARTED WITH YOUR OWN FILES
-        -->
         
         <h3 style = "text-align: center"><br><br>Cost Table</h3>
         <div style="overflow-x:auto;">
