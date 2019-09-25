@@ -4,7 +4,7 @@ public class ItemDto {
 	
 	private Long id;
 	private String name;
-	private double cost;
+	private String cost;
 	private int numOfItems;
 	private String picture;
 	
@@ -21,10 +21,10 @@ public class ItemDto {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getCost() {
+	public String getCost() {
 		return cost;
 	}
-	public void setCost(double cost) {
+	public void setCost(String cost) {
 		this.cost = cost;
 	}
 	public int getNumOfItems() {

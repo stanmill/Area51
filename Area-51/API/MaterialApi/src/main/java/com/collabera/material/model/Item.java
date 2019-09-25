@@ -4,8 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "material_list")
 public class Item {
 	
 	@Id
@@ -13,7 +15,7 @@ public class Item {
 	private Long id;
 	
 	private String name;
-	private double cost;
+	private String cost;
 	private int num;
 	private String picture;
 	
@@ -21,7 +23,7 @@ public class Item {
 		
 	}
 	
-	public Item(Long id, String name, int cost, int num, String picture) {
+	public Item(Long id, String name, String cost, int num, String picture) {
 		this.id = id;
 		this.name = name;
 		this.cost = cost;
@@ -45,11 +47,11 @@ public class Item {
 		this.name = name;
 	}
 
-	public double getCost() {
+	public String getCost() {
 		return cost;
 	}
 
-	public void setCost(double cost) {
+	public void setCost(String cost) {
 		this.cost = cost;
 	}
 
