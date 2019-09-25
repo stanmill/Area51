@@ -7,6 +7,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,19 +29,23 @@ public class MaterialController {
 		this.service = service;
 	}
 	
+	@CrossOrigin(origins = "http://localhost:8080")
 	@GetMapping("/api/materials")
+
 	public List<ItemDto> getAll() {
 
 		return service.findAll();
 	}
-
+	
+	@CrossOrigin(origins = "http://localhost:8080")
 	@GetMapping("/api/materials/{id}")
 	public ResponseEntity<ItemDto> getByID(@PathVariable long id) {
 		ItemDto hero = service.findById(id);
 
 		return ResponseEntity.ok(hero);
 	}
-
+	
+	@CrossOrigin(origins = "http://localhost:8080")
 	@PostMapping("/api/materials")
 	public ResponseEntity<ItemDto> post(@RequestBody @Valid ItemDto materials) throws URISyntaxException {
 
@@ -49,12 +54,14 @@ public class MaterialController {
 		return ResponseEntity.created(new URI("/api/materials/" + result.getId())).body(result);
 	}
 
+	@CrossOrigin(origins = "http://localhost:8080")
 	@PutMapping("/api/materials")
 	public ResponseEntity<ItemDto> updateJob(@RequestBody @Valid ItemDto hero) {
 		ItemDto result = service.update(hero);
 		return ResponseEntity.ok().body(result);
 	}
 
+	@CrossOrigin(origins = "http://localhost:8080")
 	@DeleteMapping("/api/materials/{id}")
 	public ResponseEntity<Void> deleteByID(@PathVariable Long id) {
 
