@@ -3,10 +3,12 @@ package com.collabera.material.itemdto;
 public class ItemDto {
 	
 	private Long id;
-	private String name;
-	private String cost;
 	private int numOfItems;
+	private String name;
 	private String picture;
+	private String cost;
+	
+	
 	
 	
 	public Long getId() {
