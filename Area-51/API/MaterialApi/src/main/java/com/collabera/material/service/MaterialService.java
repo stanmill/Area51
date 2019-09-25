@@ -1,4 +1,4 @@
-package com.collabera.Item.service;
+package com.collabera.material.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,17 +6,22 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import com.collabera.material.itemdto.ItemDto;
+import com.collabera.material.mapper.ItemMapper;
+import com.collabera.material.model.Item;
+import com.collabera.material.repository.MaterialRepository;
+
 
 @Service
-public class ItemService {
+public class MaterialService {
 	
-	private final ItemRepo Repo;
-	private final Mapper Map;
+	private final MaterialRepository Repo;
+	private final ItemMapper Map;
 	
-	public ItemService(ItemRepo repo, Mapper mapper) {
+	public MaterialService(MaterialRepository repo, ItemMapper mapper) {
 		super();
 		Repo = repo;
-		this.mapper = mapper;
+		this.Map = mapper;
 	}
 	
 public List<ItemDto> findAll() {
@@ -25,9 +30,9 @@ public List<ItemDto> findAll() {
 		
 	}
 	
-	public ItemDto findById(int id) {
+	public ItemDto findById(Long id) {
 		Optional<Item> mats = Repo.findById(id);
-		if (fateOp.isPresent()) {
+		if (mats.isPresent()) {
 			return Map.toDto(mats.get());
 		}
 		return null;
@@ -36,18 +41,18 @@ public List<ItemDto> findAll() {
 	public ItemDto save(ItemDto mats) {
 		Item entity = Map.toEntity(mats);
 		Item saved = Repo.save(entity);
-		return Map.toDTO(saved);
+		return Map.toDto(saved);
 	}
 
-	public ItemDto update(ItemDto hero) {
-		int id = hero.getId();
+	public ItemDto update(ItemDto mats) {
+		Long id = mats.getId();
 		Optional<Item> findById = Repo.findById(id);
 		if (findById.isPresent()) {
 			Item updatedMats = findById.get();
-			updatedMats.setNo.(hero.getName());
-			updatedMats.setName(hero.getName());
-			updatedMats.setImage(hero.getImage());
-			updatedMats.setCost(hero.getCost());
+			updatedMats.setNum(mats.getNumOfItems());
+			updatedMats.setName(mats.getName());
+			updatedMats.setPicture(mats.getPicture());
+			updatedMats.setCost(mats.getCost());
 			Item saved = Repo.save(updatedMats);
 			return Map.toDto(saved);
 		} else {
@@ -55,10 +60,8 @@ public List<ItemDto> findAll() {
 		}
 	}
 
-	public void deleteById(int id) {
+	public void deleteById(Long id) {
 		Repo.deleteById(id);
 	}
 	
-}
-
 }
