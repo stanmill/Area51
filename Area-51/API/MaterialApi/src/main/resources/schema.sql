@@ -1,0 +1,10 @@
+insert into material_list values(1, 'Monster Energy Drinks','15000','50000','./Assets/monster.jpg');
+insert into material_list values(2, 'Rocks','Free','50000','./Assets/Stone.png');
+insert into material_list values(3, 'Kunai','80000','11000','./Assets/kunai.jpg');
+insert into material_list values(4, 'Katana','150000','70000','./Assets/katana.jpg');
+insert into material_list values(5, 'Enderpearls','70000','50000','./Assets/enderpearl.png');
+insert into material_list values(6, 'Super Soakers','2','500','./Assets/bed.png');
+insert into material_list values(7, 'Minecraft TNT Cannons','3','400','/Assets/TNT.jpg');
+insert into material_list values(8, 'Super Soakers','Free','3000','./Assets/Nerf.jpg');
+insert into material_list values(9, 'Nerf Guns','15000','21','./Assets/Piano.jpg');
+insert into material_list values(10, 'Italian Grand Piano','1','50000','./Assets/Scooby.jpg');
