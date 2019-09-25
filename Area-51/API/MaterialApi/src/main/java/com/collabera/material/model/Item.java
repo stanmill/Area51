@@ -14,23 +14,22 @@ public class Item {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	@Column(name = "material_name")
-	private String name;
-	private String cost;
 	@Column(name = "number_of_items")
 	private int num;
+	@Column(name = "material_name")
+	private String name;
 	private String picture;
-	
+	private String cost;
 	public Item() {
 		
 	}
 	
 	public Item(Long id, String name, String cost, int num, String picture) {
 		this.id = id;
-		this.name = name;
-		this.cost = cost;
 		this.num = num;
+		this.name = name;
 		this.picture = picture;
+		this.cost = cost;
 	}
 	
 	public Long getId() {
@@ -73,13 +72,6 @@ public class Item {
 		this.picture = picture;
 	}
 
-	@Override
-	public String toString() {
-		return "Item [id=" + id + ", name=" + name + 
-				", cost=" + cost + ", num=" + num + 
-				", picture=" + picture + "]";
-	}
-	
 	
 	
 }
