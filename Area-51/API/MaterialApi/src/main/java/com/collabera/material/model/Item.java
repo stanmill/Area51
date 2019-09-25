@@ -1,18 +1,23 @@
 package com.collabera.material.model;
 
-public class Item {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-	/* 
-	id
-	name
-	cost
-	num
-	picture
-	 */
+@Entity
+@Table(name = "material_list")
+public class Item {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
+	@Column(name = "material_name")
 	private String name;
-	private double cost;
+	private String cost;
+	@Column(name = "number_of_items")
 	private int num;
 	private String picture;
 	
@@ -20,7 +25,7 @@ public class Item {
 		
 	}
 	
-	public Item(Long id, String name, int cost, int num, String picture) {
+	public Item(Long id, String name, String cost, int num, String picture) {
 		this.id = id;
 		this.name = name;
 		this.cost = cost;
@@ -44,11 +49,11 @@ public class Item {
 		this.name = name;
 	}
 
-	public double getCost() {
+	public String getCost() {
 		return cost;
 	}
 
-	public void setCost(double cost) {
+	public void setCost(String cost) {
 		this.cost = cost;
 	}
 
