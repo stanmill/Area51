@@ -6,6 +6,6 @@ insert into material_list values(5, '50000', 'Enderpearls','./Assets/enderpearl.
 insert into material_list values(6, '500', 'Minecraft Beds', './Assets/bed.png', '$20');
 insert into material_list values(7, '400','Minecraft TNT Cannons','/Assets/TNT.jpg','4 Diamond Picks');
 insert into material_list values(8, '3000', 'Nerf Guns','./Assets/Nerf.jpg','$30,000');
-insert into material_list values(9, '15,000', 'Italian Grand Piano','./Assets/Piano.jpg','10,000');
+insert into material_list values(9, '1', 'Italian Grand Piano','./Assets/Piano.jpg','10,000');
 insert into material_list values(10, '1', 'Scooby Snacks', './Assets/Scooby.jpg', '$20');
 select * from material_list;
