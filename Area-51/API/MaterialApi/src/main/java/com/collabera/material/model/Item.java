@@ -1,16 +1,17 @@
 package com.collabera.material.model;
 
-public class Item {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-	/* 
-	id
-	name
-	cost
-	num
-	picture
-	 */
+@Entity
+public class Item {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
+	
 	private String name;
 	private double cost;
 	private int num;
