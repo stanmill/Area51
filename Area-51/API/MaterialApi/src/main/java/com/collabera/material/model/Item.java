@@ -20,6 +20,7 @@ public class Item {
 	private String name;
 	private String picture;
 	private String cost;
+	
 	public Item() {
 		
 	}
