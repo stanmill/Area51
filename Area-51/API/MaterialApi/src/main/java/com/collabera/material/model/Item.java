@@ -1,5 +1,6 @@
 package com.collabera.material.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,9 +14,10 @@ public class Item {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	
+	@Column(name = "material_name")
 	private String name;
 	private String cost;
+	@Column(name = "number_of_items")
 	private int num;
 	private String picture;
 	
