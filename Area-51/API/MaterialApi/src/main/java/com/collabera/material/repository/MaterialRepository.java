@@ -3,10 +3,10 @@ package com.collabera.material.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.test.model.Material;
+import com.collabera.material.model.Item;
 
 @Repository
-public class MaterialRepository extends JpaRepository<Material, Long> {
+public interface MaterialRepository extends JpaRepository<Item, Long> {
 
 } 
 
