@@ -10,9 +10,9 @@ public class Item {
 	picture
 	 */
 	
-	private int id;
+	private Long id;
 	private String name;
-	private int cost;
+	private double cost;
 	private int num;
 	private String picture;
 	
@@ -20,7 +20,7 @@ public class Item {
 		
 	}
 	
-	public Item(int id, String name, int cost, int num, String picture) {
+	public Item(Long id, String name, int cost, int num, String picture) {
 		this.id = id;
 		this.name = name;
 		this.cost = cost;
@@ -28,11 +28,11 @@ public class Item {
 		this.picture = picture;
 	}
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -44,11 +44,11 @@ public class Item {
 		this.name = name;
 	}
 
-	public int getCost() {
+	public double getCost() {
 		return cost;
 	}
 
-	public void setCost(int cost) {
+	public void setCost(double cost) {
 		this.cost = cost;
 	}
 
