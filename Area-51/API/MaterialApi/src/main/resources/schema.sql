@@ -1,4 +1,4 @@
-'50000', 'Monster Energy Drinks','./Assets/monster.jpg','$15,000');
+insert into material_list values(1, '50000', 'Monster Energy Drinks','./Assets/monster.jpg','$15,000');
 insert into material_list values(2, '50000', 'Rocks', './Assets/Stone.png', 'Free(just go find one!)');
 insert into material_list values(3, '80000', 'Kunai','./Assets/kunai.jpg','$11,000');
 insert into material_list values(4, '70000', 'Katana','./Assets/katana.jpg','$150,000');
