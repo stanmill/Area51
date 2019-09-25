@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org">
     
     <head>
         <meta charset="utf-8">
@@ -63,6 +63,19 @@
          alert(document.cookie);
      }
        
+     
+        var xmlhttp = new XMLHttpRequest();
+         xmlhttp.onreadystatechange = function() {
+             if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+                 console.log(myObj);
+             }
+        };
+         xmlhttp.open("GET", "http://localhost:8080/api/materials", true);
+         xmlhttp.send();
+        
+             
+        
     </script>
 
     <img src="./Assets/alien.png" class="img-responsive logo" alt="alien image">
@@ -124,8 +137,10 @@
         
         
         <h3 style = "text-align: center"><br><br>Cost Table</h3>
+        
         <div style="overflow-x:auto;">
-        <table style="width:100%">
+            <button type="button" onclick="myFunction"> button</button>
+        <table id = "demo" style="width:100%">
             <tr>
                 <th>No. Items</th>
                 <th>Name</th>
