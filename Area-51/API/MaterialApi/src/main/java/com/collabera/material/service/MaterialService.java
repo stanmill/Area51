@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Service;
 
 import com.collabera.material.itemdto.ItemDto;
@@ -13,6 +15,7 @@ import com.collabera.material.repository.MaterialRepository;
 
 
 @Service
+@Transactional
 public class MaterialService {
 	
 	private final MaterialRepository Repo;
