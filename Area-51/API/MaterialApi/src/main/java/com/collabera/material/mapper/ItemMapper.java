@@ -1,9 +1,11 @@
 package com.collabera.material.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.collabera.material.itemdto.ItemDto;
 import com.collabera.material.model.Item;
 
-
+@Component
 public class ItemMapper {
 	
 	public Item toEntity(ItemDto dto) {
