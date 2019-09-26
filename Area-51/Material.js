@@ -15,8 +15,6 @@ function TodaysDate(){
     date = mm + '/' + dd + '/' + yyyy;
         return date
     }
-
-
     
 showCookies = () => {
  
@@ -40,8 +38,8 @@ var xmlhttp = new XMLHttpRequest();
  xmlhttp.open("GET", "http://localhost:8080/api/materials", true);
  xmlhttp.send();
 }
+
 function LoadTable(myObj) {
-    console.log("inside method");
 // EXTRACT VALUE FOR HTML HEADER. 
 var col = [];
 for (var i = 0; i < myObj.length; i++) {
@@ -91,6 +89,7 @@ var divContainer = document.getElementById("demo");
 divContainer.innerHTML = "";
 divContainer.appendChild(table);
 }
+
 window.onload = getData();
 
 function addToDatabase() {
@@ -162,26 +161,5 @@ function updateToDatabase() {
     document.getElementById("picture").value = "";
     document.getElementById("cost").value = "";  
     document.getElementById("deletion").value = "";
-
-
 }
-       
-    //    var password = window.prompt("Halt right there criminal scum! This is confidential information.", "Enter Secret password");
-       
-    //    if (password != "wah"){
-    //        alert(" Nice Try FBI!\n You won't get us today NSA!\n Why don't you just flee, CDC!\n We're the best IRS!\n It's not meant to be DOD!\n Nice attempt at obscurity, Department of Homeland Security!\n  ")
-    //        window.stop();
-    //    }
-
-    //    else{
-    //        var confirm = window.confirm("Access Granted.\n\nTop Secret, Do not show the Area 51 guards.");
-           
-    //        if (confirm != true) {
-               
-    //            alert(" You won't tell anyone traitor!")
-               
-    //            window.stop();
-    //            }
-           
-    //    }
         
