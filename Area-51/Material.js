@@ -25,21 +25,24 @@ showCookies = () => {
  alert(document.cookie);
 }
 
+var id;
 
+function getData(){
 var xmlhttp = new XMLHttpRequest();
  xmlhttp.onreadystatechange = function() {
      if (this.readyState == 4 && this.status == 200) {
-var myObj = JSON.parse(this.responseText);
-         console.log(myObj); LoadTable(myObj);
+        var myObj = JSON.parse(this.responseText);
+        id = myObj.length;
+         console.log(myObj); 
+         LoadTable(myObj);
      }
 };
  xmlhttp.open("GET", "http://localhost:8080/api/materials", true);
  xmlhttp.send();
-
+}
 function LoadTable(myObj) {
     console.log("inside method");
 // EXTRACT VALUE FOR HTML HEADER. 
-// ('Book ID', 'Book Name', 'Category' and 'Price')
 var col = [];
 for (var i = 0; i < myObj.length; i++) {
     for (var key in myObj[i]) {
@@ -87,6 +90,41 @@ for (let i = 0; i < myObj.length; i++) {
 var divContainer = document.getElementById("demo");
 divContainer.innerHTML = "";
 divContainer.appendChild(table);
+}
+window.onload = getData();
+
+function addToDatabase() {
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "http://localhost:8080/api/materials", true);
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+
+    let items = document.getElementById("item").value;
+    let newitems = parseInt(items);
+    let name = document.getElementById("name").value;
+    let newname = String(name);
+    let picture = document.getElementById("picture").value;
+    let newpicture = String(picture);
+    let cost = document.getElementById("cost").value;
+    let newcost = String(cost);
+     id += 1;
+
+    xmlhttp.onreadystatechange = function() {
+        if(xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+            var json = JSON.parse(xmlhttp.responseText);
+            console.log(json.name + ", "+ json.name);
+
+        }
+    }
+    let jsonObject = JSON.stringify({"id":id,"numOfItems": newitems,"name": newname, "picture": newpicture,"cost": newcost});
+    
+    xmlhttp.send(jsonObject);
+    
+    document.getElementById("item").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("picture").value = "";
+    document.getElementById("cost").value = "";
+
+    
 }
 
        
