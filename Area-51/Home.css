@@ -161,3 +161,7 @@ tr:nth-child(even){
 address {
   color: aliceblue;
 }
+
+.input {
+  margin: 2%;
+}
