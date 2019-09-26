@@ -123,10 +123,20 @@ function addToDatabase() {
     document.getElementById("name").value = "";
     document.getElementById("picture").value = "";
     document.getElementById("cost").value = "";
-
     
+    window.location.reload(true);
 }
 
+function deleteFromDatabase(){
+    
+    var deleteId = document.getElementById("deletion").value;
+    
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("DELETE", "http://localhost:8080/api/materials/" + deleteId, true);
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+    xmlhttp.send();
+    window.location.reload(true);
+}
        
     //    var password = window.prompt("Halt right there criminal scum! This is confidential information.", "Enter Secret password");
        
