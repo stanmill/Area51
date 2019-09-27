@@ -23,7 +23,7 @@ showCookies = () => {
  alert(document.cookie);
 }
 
-var id;
+
 
 function getData(){
 var xmlhttp = new XMLHttpRequest();
@@ -105,7 +105,7 @@ function addToDatabase() {
     let newpicture = String(picture);
     let cost = document.getElementById("cost").value;
     let newcost = String(cost);
-     id += 1;
+    
 
     xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState === 4 && xmlhttp.status === 200) {
@@ -114,7 +114,7 @@ function addToDatabase() {
 
         }
     }
-    let jsonObject = JSON.stringify({"id":id,"numOfItems": newitems,"name": newname, "picture": newpicture,"cost": newcost});
+    let jsonObject = JSON.stringify({"numOfItems": newitems,"name": newname, "picture": newpicture,"cost": newcost});
     
     xmlhttp.send(jsonObject);
     
