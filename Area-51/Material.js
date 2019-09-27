@@ -97,14 +97,12 @@ function addToDatabase() {
     xmlhttp.open("POST", "http://localhost:8080/api/materials", true);
     xmlhttp.setRequestHeader("Content-Type", "application/json");
 
+    
     let items = document.getElementById("item").value;
-    let newitems = parseInt(items);
     let name = document.getElementById("name").value;
-    let newname = String(name);
     let picture = document.getElementById("picture").value;
-    let newpicture = String(picture);
     let cost = document.getElementById("cost").value;
-    let newcost = String(cost);
+ 
     
 
     xmlhttp.onreadystatechange = function() {
@@ -114,7 +112,7 @@ function addToDatabase() {
 
         }
     }
-    let jsonObject = JSON.stringify({"numOfItems": newitems,"name": newname, "picture": newpicture,"cost": newcost});
+    let jsonObject = JSON.stringify({"numOfItems": items,"name": name, "picture": picture,"cost": cost});
     
     xmlhttp.send(jsonObject);
     
