@@ -30,8 +30,6 @@ var xmlhttp = new XMLHttpRequest();
  xmlhttp.onreadystatechange = function() {
      if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
-        id = myObj.length;
-         console.log(myObj); 
          LoadTable(myObj);
      }
 };
@@ -96,15 +94,12 @@ function addToDatabase() {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.open("POST", "http://localhost:8080/api/materials", true);
     xmlhttp.setRequestHeader("Content-Type", "application/json");
-
-    
+   
     let items = document.getElementById("item").value;
     let name = document.getElementById("name").value;
     let picture = document.getElementById("picture").value;
     let cost = document.getElementById("cost").value;
  
-    
-
     xmlhttp.onreadystatechange = function() {
         if(xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             var json = JSON.parse(xmlhttp.responseText);
