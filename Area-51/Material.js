@@ -56,7 +56,7 @@ var table = document.createElement("table");
 
 var tr = table.insertRow(-1);                   // TABLE ROW.
 
-for (var i = 1; i < col.length; i++) {
+for (var i = 0; i < col.length; i++) {
     var th = document.createElement("th");      // TABLE HEADER.
     th.innerHTML = col[i];
     tr.appendChild(th);
@@ -67,7 +67,7 @@ for (let i = 0; i < myObj.length; i++) {
 
     tr = table.insertRow(-1);
 
-    for (var j = 1; j < col.length; j++) {
+    for (var j = 0; j < col.length; j++) {
        
         var tabCell = tr.insertCell(-1);
         console.log(myObj[i][col[j]])
@@ -100,13 +100,7 @@ function addToDatabase() {
     let picture = document.getElementById("picture").value;
     let cost = document.getElementById("cost").value;
  
-    xmlhttp.onreadystatechange = function() {
-        if(xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-            var json = JSON.parse(xmlhttp.responseText);
-            console.log(json.name + ", "+ json.name);
-
-        }
-    }
+    
     let jsonObject = JSON.stringify({"numOfItems": items,"name": name, "picture": picture,"cost": cost});
     
     xmlhttp.send(jsonObject);
