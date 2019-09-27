@@ -139,20 +139,16 @@ function deleteFromDatabase(){
 function updateToDatabase() {
 
     let items = document.getElementById("item").value;
-    let newitems = parseInt(items);
     let name = document.getElementById("name").value;
-    let newname = String(name);
     let picture = document.getElementById("picture").value;
-    let newpicture = String(picture);
     let cost = document.getElementById("cost").value;
-    let newcost = String(cost);
     let newId = document.getElementById("deletion").value;
 
     xmlhttp = new XMLHttpRequest();
     xmlhttp.open("PUT","http://localhost:8080/api/materials", true);
     xmlhttp.setRequestHeader("Content-Type", "application/json");
 
-    let jsonObject = JSON.stringify({"id":newId,"numOfItems": newitems,"name": newname, "picture": newpicture,"cost": newcost});
+    let jsonObject = JSON.stringify({"id":newId,"numOfItems": items,"name": name, "picture": picture,"cost": cost});
     console.log(jsonObject+"updated");
     xmlhttp.send(jsonObject);
     
