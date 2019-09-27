@@ -1,0 +1,10 @@
+insert into material_list(number_of_items,material_name, picture, cost) values(50000, 'Monster Energy Drinks','./Assets/monster.jpg','$15,000');
+insert into material_list(number_of_items,material_name, picture, cost) values(50000, 'Rocks', './Assets/Stone.png', 'Free(just go find one!)');
+insert into material_list(number_of_items,material_name, picture, cost) values(80000, 'Kunai','./Assets/kunai.jpg','$11,000');
+insert into material_list(number_of_items,material_name, picture, cost) values(70000, 'Katana','./Assets/katana.jpg','$150,000');
+insert into material_list(number_of_items,material_name, picture, cost) values(50000, 'Enderpearls','./Assets/enderpearl.png','Kill 70000 Endermen');
+insert into material_list(number_of_items,material_name, picture, cost) values(500, 'Minecraft Beds', './Assets/bed.png', '$20');
+insert into material_list(number_of_items,material_name, picture, cost) values(400,'Minecraft TNT Cannons','/Assets/TNT.jpg','4 Diamond Picks');
+insert into material_list(number_of_items,material_name, picture, cost) values(3000, 'Nerf Guns','./Assets/Nerf.jpg','$30,000');
+insert into material_list(number_of_items,material_name, picture, cost) values(1, 'Italian Grand Piano','./Assets/Piano.jpg','$10,000');
+insert into material_list(number_of_items,material_name, picture, cost) values(1, 'Scooby Snacks', './Assets/Scooby.jpg', '$20');

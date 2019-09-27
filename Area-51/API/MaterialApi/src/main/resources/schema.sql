@@ -1,11 +1,8 @@
-insert into material_list values(1, '50000', 'Monster Energy Drinks','./Assets/monster.jpg','$15,000');
-insert into material_list values(2, '50000', 'Rocks', './Assets/Stone.png', 'Free(just go find one!)');
-insert into material_list values(3, '80000', 'Kunai','./Assets/kunai.jpg','$11,000');
-insert into material_list values(4, '70000', 'Katana','./Assets/katana.jpg','$150,000');
-insert into material_list values(5, '50000', 'Enderpearls','./Assets/enderpearl.png','Kill 70000 Endermen');
-insert into material_list values(6, '500', 'Minecraft Beds', './Assets/bed.png', '$20');
-insert into material_list values(7, '400','Minecraft TNT Cannons','/Assets/TNT.jpg','4 Diamond Picks');
-insert into material_list values(8, '3000', 'Nerf Guns','./Assets/Nerf.jpg','$30,000');
-insert into material_list values(9, '1', 'Italian Grand Piano','./Assets/Piano.jpg','$10,000');
-insert into material_list values(10, '1', 'Scooby Snacks', './Assets/Scooby.jpg', '$20');
-select * from material_list;
+create table material_list (
+  id int(200) NOT NULL AUTO_INCREMENT,
+  number_of_items int(30) DEFAULT NULL,
+  material_name  varchar(30) DEFAULT NULL,
+  picture varchar(1000) NOT NULL , 
+  cost varchar(30) DEFAULT NULL,
+  PRIMARY KEY (id)
+);
