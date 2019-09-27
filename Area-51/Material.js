@@ -121,7 +121,8 @@ function addToDatabase() {
     document.getElementById("item").value = "";
     document.getElementById("name").value = "";
     document.getElementById("picture").value = "";
-    document.getElementById("cost").value = "";   
+    document.getElementById("cost").value = ""; 
+    alert("Successfully Added to Database");
 }
 
 function deleteFromDatabase(){
@@ -134,6 +135,7 @@ function deleteFromDatabase(){
     xmlhttp.send();
 
     document.getElementById("deletion").value = "";
+    alert("Successfully Deleted");
 }
 
 function updateToDatabase() {
@@ -161,5 +163,6 @@ function updateToDatabase() {
     document.getElementById("picture").value = "";
     document.getElementById("cost").value = "";  
     document.getElementById("deletion").value = "";
+    alert("Successfully Updated");
 }
         
